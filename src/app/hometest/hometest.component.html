@@ -1,0 +1,23 @@
+<div class="cont">
+
+      <div class="tbl">
+        <h2>Plan your day!</h2>
+        <h3>User: Kolya. Count of Task {{ln}}</h3>
+        <hr class="hr">
+        <div class="flex">
+          <input type="text" class="place task" placeholder="Write your task..." [(ngModel)]="newTask" (input)="inputTask()">
+          <input type="button" class="place add" value="Add" (click)="addTask()" [disabled]="checkAdd">
+        </div>
+        <app-table [valuesTask]="taskList"
+                   (tasksList)="getTasksList($event)"
+                   (tasksLength)="getTasksLength($event)"
+                   (nameEdit)="getTasksName($event)"
+                   (indexEdit)="getTasksIndex($event)"
+                   (checkEdit)="getTasksCheck($event)"
+        ></app-table>
+        <div *ngIf="showEdit" class="editor">
+          <input type="text" class="place editText" placeholder="Write your task..." [(ngModel)]="editTask" (input)="edtTask()">
+          <input type="button" class="place save" value="Save" (click)="saveTask()" [disabled]="checkSave">
+        </div>
+      </div>
+</div>

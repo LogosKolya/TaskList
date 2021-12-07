@@ -1,0 +1,122 @@
+body {
+  background-color: #ffffff;
+}
+.p {
+  text-align: left;
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.task {
+  width: 80%;
+}
+.add {
+  background: forestgreen;
+  color: white;
+  width: 19%;
+}
+.add:hover {
+  background: #05a105;
+}
+.add:disabled {
+  background: gray;
+}
+.add:disabled:hover {
+  background: gray;
+}
+.cont {
+  font-family: Arial;
+}
+.tbl {
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+}
+hr {
+  color: #d7d7d7;
+  background-color: #d7d7d7;
+}
+.place {
+  box-sizing: border-box;
+  margin: 0px 0;
+  height: 40px;
+  border: 1px #9f9f9f solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.place::placeholder {
+  font-weight: bold;
+}
+.place:focus {
+  outline: 3px rgba(67, 170, 255, 0.52) solid;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.edit {
+  width: 60px;
+  text-align: center;
+  padding: 0;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+.edit:hover {
+  background-color: #c47f00;
+}
+.delete {
+  width: 90px;
+  text-align: center;
+  padding: 0;
+  background-color: #ff3e3e;
+  color: white;
+  border: none;
+}
+.delete:hover {
+  background-color: #c03131;
+}
+.delete:disabled {
+  background-color: #c03131;
+}
+.delete:hover:disabled {
+  background-color: #c03131;
+}
+tr {
+  height: 60px;
+  border-top: 2px solid #bebebe;
+}
+td {
+  color: #444444;
+  font-size: 15px;
+}
+.ind {
+  width: 45px;
+}
+.editor {
+  display: flex;
+  justify-content: center;
+}
+.editText {
+  margin: auto 20px;
+  width: 350px;
+}
+.save {
+  background: forestgreen;
+  color: white;
+  margin: auto 20px;
+  width: 80px;
+}
+.save:hover {
+  background: #05a105;
+}
+.save:disabled {
+  background: gray;
+}
